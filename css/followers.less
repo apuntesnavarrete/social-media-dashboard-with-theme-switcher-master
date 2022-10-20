@@ -1,6 +1,50 @@
 .content_followers{
-    .contents-function(12.5em,3px solid @color-special-more)
+    .contents-function(14em,3px solid @color-special-more);
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+
+
 }
 .followers{
     margin: 2em 0 1.5em 0;
+    
+    &_top{
+        margin-bottom: 0.5em;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        p{
+            margin: 0.5em;
+            color: @color-text;
+            font-size: 0.7em;
+
+        }
+    }
+
+    &_totales{
+        font-size: 4em;
+    }
+    &_description{
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        font-size: 0.8em;
+        color: @color-text;
+    }
+    &_difference{
+        
+        margin: 1.5em 0 0.5em 0;
+        font-size: 0.7em;
+        color: @color-special-more;
+        display: flex;
+            align-items: center;
+        img{
+            margin:0em 0.5em; 
+        }
+
+}
 }

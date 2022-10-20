@@ -1,9 +1,15 @@
 @font: 'Montserrat';
-@color-claro: rgb(240, 238, 238) ;
+@color-ligth: rgb(240, 238, 238) ;
 @color-dark: rgb(34, 34, 33) ;
-@color-text: rgb(143, 142, 142);
+@color-text: rgb(105, 102, 102);
 @color-special-more: green ;
 @color-special-less: red ;
+
+.size-movil{
+    width: 325px;
+
+}
+
 
 *{
     margin: 0;
@@ -11,16 +17,28 @@
 }
 
 body{
-    color: @color-claro;
+    color: @color-ligth;
     background-color: @color-dark;
 
     font-size: 14px;
     font-family: @font , "sans-serif";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+main{
+    .size-movil()
+}
+footer{
+    .size-movil()
+
 }
 
 .ligth{
     color: @color-dark;
-    background-color: @color-claro;
+    background-color: @color-ligth;
 }
 
 
@@ -34,7 +52,3 @@ body{
 
 }
 
-.size-movil{
-    width: 350px;
-
-}

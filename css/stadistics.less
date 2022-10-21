@@ -1,8 +1,43 @@
-.content_stadistics{
-    .contents-function(7.5em,none)
-
-}
-
 .title_stadistics{
     margin: 2em 0 1em 0;
 }
+
+.stadistics{
+    &_content{
+        .contents-function(7.5em,none);
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    &_top{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        p{
+            color: @color-text;
+        }
+    }
+    &_bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;  
+        p{
+            font-size: 2em;
+        }
+        .stadistics_bottom-porcentaje{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 0.5em;
+            p{
+                color: @color-special-more;
+                margin: 0 2px;
+            }
+        }
+    }
+    
+}
+
+

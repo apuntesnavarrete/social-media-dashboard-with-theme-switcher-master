@@ -27,8 +27,13 @@
     border: 0px solid @color-dark ;
     border-top: @borderCard;
     margin: 1em 0;
-
+    cursor: pointer;
+    &:hover{
+        filter: brightness(1.5);
+    }
 }
+
+
 
 *{
     margin: 0;
@@ -63,12 +68,9 @@ footer{
 
 
 
-.txt-bold {
-    font-weight: 700;
+@media (min-width: 1400px) {
+
+    body{
+        font-size: 18px;
+    }
 }
-
-.txt-ligth{
-    font-weight: 400;
-
-}
-

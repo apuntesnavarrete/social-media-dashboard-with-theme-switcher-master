@@ -7,6 +7,22 @@
 
 
 }
+
+.content_followers:nth-child(1){
+    border-top-color: @color-faccebook;
+}
+
+.content_followers:nth-child(2){
+    border-top-color: @color-twiteer;
+}
+.content_followers:nth-child(3){
+    border-top-color: @color-instagram ;
+}
+
+.content_followers:nth-child(4){
+    border-top-color: @color-youtube;
+}
+
 .followers{
     margin: 2em 0 1.5em 0;
     
@@ -50,6 +66,15 @@
         }
 
 }
+}
+
+@media (min-width: 500px) {
+    .followers{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        gap: 1%;
+       
+    }
 }
 
 

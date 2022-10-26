@@ -49,7 +49,7 @@
   }
   
   .Toogle___input:checked ~ .toggle__fill {
-    background-image: linear-gradient(to right, @gradiente-start , @gradiente-finish);
+    background-image: @gradiente-mode ;
 
   }
   .toggle__fill::after {
@@ -67,6 +67,7 @@
   
   .Toogle___input:checked ~ .toggle__fill::after {
     transform: translateX(1.25em);
+    background-color: @color-dark;
   }
   
   @media (min-width: 1000px) {
